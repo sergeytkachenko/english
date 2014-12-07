@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <title>English system</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <link type='text/css' rel='stylesheet' th:href="@{/resources/css/default.css}" />
+    <link type='text/css' rel='stylesheet' th:href="@{/resources/js/ext/packages/ext-theme-crisp/build/resources/ext-theme-crisp-all.css}" />
+    <script th:src="@{//www.google.com/jsapi}"></script>
+
+    <script th:src="@{/resources/js/ext/build/ext-all.js}" />
+
+    <script th:src="@{/resources/js/jquery-2.1.1.min.js}" />
+    <script th:src="@{/resources/js/angular.min.js}" />
+    <script th:src="@{/resources/app.js}" />
+
+    <div class="content" th:include="view/content" />
+</body>
+</html>

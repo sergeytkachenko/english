@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.content {
+    height: 100%;
+}
+
+form[name=search-word] {
+    margin: 0 auto;
+    width: 450px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    display: block;
+}
+
+form[name=search-word] input {
+    width: 100%;
+    height: 26px;
+    border: 1px solid #cdcdcd;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+
+form[name=search-word] input:hover {
+    border-color: #B0B0B0;
+}
+
+form[name=search-word] input:active, form[name=search-word] input:focus{
+    border-color: #4285f4;
+}
+
+div.searching {
+    padding: 40px 0 0 130px;
+}
+
+div.searching form[name=search-word] {
+    top: 0;
+    margin-left: 0;
+    transform: none;
+}
+
+ul.search-result {
+    width: 460px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    border: 1px solid #C8C5C5;
+    border-top: 0;
+    box-shadow: 1px 1px 5px #C2C2C2;
+}
+
+ul.search-result:empty {
+    box-shadow: none;
+    border: 0;
+}
+
+ul.search-result li {
+    list-style: none;
+    display: block;
+}
+
+ul.search-result li:hover, ul.search-result li.active{
+    background-color: #eee;
+}
+
+ul.search-result li a {
+    font-style: normal;
+    text-decoration: none;
+    color: #2a3142;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+ul.search-result li a img {
+    max-height: 90%;
+    width: 40px;
+    position: absolute;
+    left: -50px;
+    display: none;
+}
+
+div.description-word {
+    margin-top: 20px;
+    font-size: 12px;
+    overflow-y: auto;
+    max-height: 90%;
+    font-family: tahoma;
+    letter-spacing: 0.04em;
+    color: #333;
+}
+
+div.description-word br {
+    margin: 0;
+}
+
+div.description-word img {
+    float: left;
+    padding: 0 5px 5px 0;
+}
